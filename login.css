@@ -1,0 +1,85 @@
+/* login.css */
+
+body {
+    background: linear-gradient(135deg, #2d14bd, #2678ca); /* Novo gradiente de cores */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    text-align: center;
+}
+
+.card {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+    margin-top: -20px; /* Ajuste no posicionamento para centralizar */
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 20px; /* Redução da margem inferior */
+}
+
+.card label {
+    display: block;
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 18px; /* Tamanho do label ajustado */
+    font-weight: bold;
+    text-align: left; /* Alinhamento do texto do label */
+}
+
+.card input[type="password"],
+.card input[type="text"] { /* Ajuste de tamanho para ambos os campos */
+    width: calc(115% - 40px); /* Largura ajustada com margem interna */
+    padding: 14px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border: 2px solid #ccc; /* Borda */
+    border-radius: 10px; /* Raio da borda */
+    font-size: 16px; /* Tamanho da fonte ajustado */
+    box-sizing: border-box; /* Mantém a largura incluindo o padding e a borda */
+}
+
+.card button {
+    background-color: #e50914; /* Cor de fundo do botão */
+    color: #fff;
+    border: none;
+    padding: 16px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Raio da borda */
+    cursor: pointer;
+    font-size: 18px; /* Tamanho da fonte */
+    width: calc(90% - 40px); /* Largura ajustada com margem interna */
+    margin-top: 10px; /* Espaçamento superior */
+    text-transform: uppercase; /* Transformação do texto em maiúsculo */
+}
+
+.card button:hover {
+    background-color: #c30000; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.error-message {
+    color: #c0392b;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Animação de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://i.pinimg.com/originals/5f/2f/30/5f2f30f9a0779f59d2cca446cdf7b97e.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+h1, h2 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    margin: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.photo {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.photo h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.photo p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.photo .date {
+    font-size: 0.8em;
+    color: #777;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    color: #000;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+form button:hover {
+    background-color: #555;
+}
